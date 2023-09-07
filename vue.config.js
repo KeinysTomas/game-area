@@ -1,4 +1,4 @@
-
 module.exports = {
-  publicPath: "/game-area/"
-}
+  publicPath: process.env.NODE_ENV === "production" ? "/game-area/" : "/",
+};
+
